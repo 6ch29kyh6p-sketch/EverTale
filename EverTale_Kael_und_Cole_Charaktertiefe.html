@@ -1,0 +1,259 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#151020"><title>EverTale · Deine Geschichte</title><style>
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#f7f0ff;background:#100d19}*{box-sizing:border-box}body{margin:0}button,input,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #d2a7ff;outline-offset:2px}.app{max-width:850px;margin:auto;min-height:100dvh;padding:20px 18px 145px}.top{display:flex;justify-content:space-between;align-items:center;gap:10px}.brand{font-size:27px;font-weight:800;letter-spacing:-1px}.brand span{color:#c79bff}.pill{font-size:12px;border:1px solid #55416c;border-radius:30px;padding:8px 11px;color:#d5c3e7}.muted{color:#b4a4c8}.hero{margin:25px 0 22px;padding:23px;border:1px solid #503565;border-radius:24px;background:radial-gradient(circle at 90% 0,#4a2765,#241630 65%)}h1{font-size:28px;margin:5px 0 10px;line-height:1.12}h2{font-size:21px}p{line-height:1.5}.eyebrow{color:#e0b7ff;font-size:12px;letter-spacing:1.4px;text-transform:uppercase}.filters{display:flex;gap:8px;overflow:auto;padding-bottom:8px}.filter,.choice,.secondary{background:#251c32;color:#f4eafa;border:1px solid #4e3a61;border-radius:14px;padding:10px 14px}.filter.active{background:#a36ce0;color:#1b1027;border-color:#a36ce0;font-weight:700}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:15px}.character{background:#21182c;border:1px solid #43314f;border-radius:19px;overflow:hidden;text-align:left;color:inherit;padding:0}.art{height:145px;display:flex;align-items:center;justify-content:center;font-size:64px;background:linear-gradient(140deg,#523071,#1c1a35)}.character:nth-child(2) .art{background:linear-gradient(140deg,#23445b,#292037)}.character:nth-child(3) .art{background:linear-gradient(140deg,#3b426e,#50336b)}.character:nth-child(4) .art{background:linear-gradient(140deg,#75503e,#36203d)}.cardtext{padding:13px}.cardtext strong{font-size:18px}.cardtext small{display:block;color:#c5a8db;margin-top:4px}.cardtext p{font-size:13px;color:#d4c6dc;margin:7px 0 0}.nav{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:center;gap:8px;background:#171020ed;border-top:1px solid #3d304b;padding:11px 12px max(11px,env(safe-area-inset-bottom));z-index:5}.nav button{flex:1;max-width:180px;border:0;background:transparent;color:#b4a4c8;padding:8px 3px}.nav button.active{color:#e4b6ff;font-weight:700}.hidden{display:none!important}.back{background:none;border:0;color:#e4b6ff;padding:8px 0}.chathead{display:flex;align-items:center;gap:12px;border-bottom:1px solid #3c2e49;padding-bottom:14px}.avatar{width:51px;height:51px;border-radius:16px;display:grid;place-items:center;font-size:30px;background:#382348}.chatbody{display:flex;flex-direction:column;gap:13px;min-height:43vh;padding:20px 0}.bubble{max-width:88%;padding:13px 15px;border-radius:17px;line-height:1.55;white-space:pre-wrap;font-size:15px}.bot{background:#2a2037;border:1px solid #443450;align-self:flex-start}.user{background:#69418b;align-self:flex-end}.speaker{font-size:11px;font-weight:700;color:#e3bbff;margin-bottom:6px}.user .speaker{color:#f3ddff}.choices{display:grid;gap:8px;margin:0 0 12px;padding:12px;border:1px solid #55416c;border-radius:16px;background:#1e1729}.choices.hidden{display:none!important}.choice-title{font-size:12px;color:#d9c2e9;margin-bottom:3px}.choice{text-align:left;width:100%;background:#2d203c}.composer{display:flex;flex-direction:column;gap:9px}.composer-tools{display:flex;align-items:center;gap:8px;justify-content:space-between}.composer-tools .secondary{padding:10px 13px}.composer-tools .primary{min-width:105px}.moon-button{width:44px;height:44px;border-radius:13px;font-size:23px;display:grid;place-items:center;flex:none}.moon-button[aria-expanded="true"]{background:#65418b;border-color:#b788ed}.composer textarea{display:block;width:100%;min-height:145px;max-height:42vh;resize:vertical;background:#261d32;color:white;border:1px solid #55416c;border-radius:16px;padding:15px;font-size:16px;line-height:1.55}.composer textarea::placeholder{color:#b9a6cc}.composer .action-button{padding:11px 12px;white-space:nowrap}.message-action{font-style:italic;color:#d9c2e9}.user .message-action{color:#f4e2ff}.composer input{flex:1;min-width:0;background:#261d32;color:white;border:1px solid #55416c;border-radius:14px;padding:13px}.primary{border:0;background:#b788ed;color:#1b1025;border-radius:14px;padding:12px 18px;font-weight:750}.note{font-size:12px;color:#b4a4c8}.storyitem{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px;border:1px solid #483552;background:#21182c;border-radius:15px;margin-bottom:10px}.storyitem button{white-space:nowrap}.profile{background:#21182c;padding:20px;border:1px solid #43314f;border-radius:18px}.tag{display:inline-block;background:#3b2850;border-radius:30px;padding:6px 9px;font-size:11px;color:#e3c8f8;margin-top:8px}@media(min-width:650px){.cards{grid-template-columns:repeat(4,1fr)}.art{height:170px}.app{padding-top:35px}}
+</style></head><body><main class="app"><header class="top"><div class="brand">Ever<span>Tale</span> ✦</div><div class="pill">✧ Demo · 0 €</div></header><section id="discover"><div class="hero"><div class="eyebrow">Deine Welt. Deine Entscheidungen.</div><h1>Jede Geschichte beginnt mit dir.</h1><p class="muted">Entdecke Charaktere, erlebe magische Abenteuer und entscheide, wie deine Geschichte weitergeht.</p></div><h2>Charaktere entdecken</h2><div class="filters" id="filters"></div><div class="cards" id="cards"></div><p class="note">Demo-Modus: Kael reagiert auf Themen und Entscheidungen. Noch keine echte KI.</p></section><section id="chat" class="hidden"><button class="back" id="back">← Zurück</button><div class="chathead"><div class="avatar" id="chatavatar"></div><div><strong id="chatname"></strong><div class="muted" id="chatgenre" style="font-size:12px"></div></div></div><div class="chatbody" id="messages" aria-live="polite"></div><div class="choices hidden" id="choices" aria-label="Optionale Antwortvorschläge"></div><form class="composer" id="composer"><textarea id="messageInput" maxlength="1200" rows="5" placeholder="Schreibe deine Geschichte …" aria-label="Nachricht"></textarea><div class="composer-tools"><button class="secondary moon-button" id="moonButton" type="button" aria-label="Antwortvorschläge anzeigen" aria-controls="choices" aria-expanded="false" title="Antwortvorschläge">☾</button><button class="secondary action-button" id="actionButton" type="button">✦ Handlung</button><button class="primary" type="submit">Senden</button></div></form><p class="note">Gesprochenes normal eingeben. ✦ fügt eine Handlung ein; ☾ zeigt optionale Antwortideen. Nachrichten bleiben nur in diesem Browser gespeichert.</p><button class="secondary" id="resetChat" style="margin-top:5px">Geschichte neu starten</button></section><section id="stories" class="hidden"><h1>Meine Geschichten</h1><p class="muted">Setze deine begonnenen Abenteuer fort.</p><div id="storylist"></div></section><section id="profile" class="hidden"><h1>Mein Profil</h1><div class="profile"><h2>✦ EverTale Demo</h2><p>Du testest eine kostenlose Version ohne Konto, echte KI oder Zahlungen. Kaels Dialoge sind regelbasiert und nicht frei generiert.</p><div class="tag">Premium · geplant, nicht aktiv</div><p class="muted">Später: viele Textnachrichten mit einem fairen Monatsabo und ohne Coin-Nachkäufe.</p><p class="note">Deine Chats werden lokal auf diesem Gerät gespeichert. Das Löschen der Browserdaten kann sie entfernen.</p><button class="secondary" id="clearAll">Alle lokalen Chats löschen</button></div></section></main><nav class="nav" aria-label="Hauptnavigation"><button data-tab="discover" class="active">✧ Entdecken</button><button data-tab="stories">▤ Geschichten</button><button data-tab="profile">♙ Profil</button></nav><script>
+const chars=[{id:'kael',name:'Kael',emoji:'🖤',genre:'Dark Romance · Mafia',tags:['Romantik','Drama'],desc:'Ein mächtiger Mafiaboss, der gewohnt ist, alles zu kontrollieren.',intro:'*Regen zieht Schlieren über die Fenster des luxuriösen Penthouses. Kael sitzt in einem Ledersessel, sein schwarzes Hemd am Kragen geöffnet. Als du eintrittst, hebt er langsam den Blick.*\n„Du bist also die Person, die sich nicht an meine Regeln hält. Setz dich. Wir müssen reden.“',choices:['Kael direkt herausfordern','Fragen, warum er dich herbestellt hat','Das Penthouse verlassen'],replies:['*Kael lehnt sich zurück und ein kaum sichtbares Lächeln erscheint.* „Mutig. Die meisten würden sich das nicht trauen. Was willst du wirklich von mir?“','*Sein Blick wird ernst.* „Jemand hat deinen Namen in eine Angelegenheit hineingezogen, die gefährlich werden könnte. Ich will wissen, wem du vertraust.“','*Kael steht auf, bleibt aber auf Abstand.* „Du kannst gehen. Doch bevor du das tust, solltest du wissen: Jemand beobachtet dich.“']},{id:'noah',name:'Noah',emoji:'🕵🏻',genre:'Mystery · Drama',tags:['Drama','Mystery'],desc:'Ein Ermittler, der dir etwas Wichtiges verschweigt.',intro:'*Regen prasselt gegen die Fenster des kleinen Cafés. Noah schiebt dir ein versiegeltes Foto zu.*\n„Wenn du mir vertraust, öffne es. Aber danach gibt es kein Zurück.“',choices:['Das Foto ansehen','Noah zur Rede stellen','Das Café unbemerkt verlassen'],replies:['*Auf dem Foto erkennst du dich selbst – an einem Ort, den du nie besucht hast.* „Das ist erst der Anfang“, flüstert Noah.','*Noah schaut zur Tür.* „Ich wollte dich schützen. Aber jetzt sind sie uns auf der Spur.“','*Draußen steht ein schwarzes Auto mit laufendem Motor. Dein Handy vibriert: Unbekannte Nummer.*']},{id:'lyra',name:'Lyra',emoji:'🧝🏻‍♀️',genre:'Fantasy · Abenteuer',tags:['Fantasy'],desc:'Eine Magierin, die dich in eine verbotene Welt führt.',intro:'*Zwischen leuchtenden Bäumen öffnet sich ein Portal. Lyra hebt ihren Stab.*\n„Die Sterne haben dich gewählt. Kommst du mit mir?“',choices:['Durch das Portal treten','Lyra nach der Prophezeiung fragen','Den Zauber untersuchen'],replies:['*Warmer Wind trägt den Duft fremder Blumen heran. Auf der anderen Seite wartet eine schwebende Stadt.*','*Lyra zieht eine alte Karte hervor.* „Die Prophezeiung spricht von jemandem, der zwei Welten retten kann.“','*Die Runen reagieren auf deine Berührung und formen deinen Namen aus Licht.*']},{id:'cole',name:'Cole',emoji:'🤠',genre:'Western Romance · Ranch',tags:['Romantik','Drama','Western'],desc:'Ein frecher, charmanter Ranchbesitzer mit blauen Augen, blonden Haaren und einem großen Herzen.',intro:'*Die Abendsonne liegt über der Silver Creek Ranch in Montana. Hinter dem Zaun grasen Rinder, und ein brauner Hengst schnaubt neben dem Stall. Cole Bennett, 1,95 Meter groß, mit kurzen blonden Haaren, blauen Augen und kräftigen Armen, lehnt am Tor. Er schiebt seinen Cowboyhut zurück und grinst.*\n„Du musst die Neue sein. Hoffentlich hast du keine Angst vor ein bisschen Staub, Sweetheart. Hier gibt es mehr Pferde als Ausreden.“',choices:['„Nenn mich nicht Sweetheart, Cowboy.“','„Zeig mir deine Pferde.“','„Und wenn ich nur wegen dir hier bin?“'],replies:['*Cole hebt lachend die Hände.* „Na gut, Boss. Wie soll ich dich denn nennen? Aber ich wette, du kannst genauso gut austeilen wie ich.“','*Cole öffnet das Stalltor und tritt zur Seite.* „Sehr gern. Der Braune heißt Ranger. Er mag Leute, die ehrlich zu ihm sind – genau wie ich.“','*Sein freches Grinsen wird für einen Moment weicher.* „Dann sollte ich mir wohl besonders viel Mühe geben, Darlin’. Komm, ich zeig dir den schönsten Platz der Ranch.“']},{id:'elias',name:'Elias',emoji:'🎸',genre:'Romantik · Alltag',tags:['Romantik','Drama'],desc:'Ein Musiker, dessen Vergangenheit alles verändert.',intro:'*In einem fast leeren Musikclub spielt Elias die letzten Töne eines Liedes. Als er dich sieht, lächelt er.*\n„Komisch. Genau auf dich habe ich heute gehofft.“',choices:['Ihn nach dem Lied fragen','Dich neben ihn setzen','Ihn auf seine Vergangenheit ansprechen'],replies:['*Elias legt die Gitarre ab.* „Das Lied ist für jemanden, den ich vor langer Zeit verloren habe.“','*Er rückt zur Seite und reicht dir ein Glas Wasser.* „Erzähl mir etwas, das sonst niemand über dich weiß.“','*Sein Lächeln verschwindet kurz.* „Darüber spreche ich nicht gern. Aber vielleicht sollte ich es endlich tun.“']}];
+let filter='Alle',active=null,tab='discover';const $=id=>document.getElementById(id);function getChats(){try{return JSON.parse(localStorage.getItem('evertale_chats')||'{}')}catch{return {}}}function saveChats(chats){try{localStorage.setItem('evertale_chats',JSON.stringify(chats))}catch{alert('Speichern ist in diesem Browser nicht verfügbar.')}}function chatFor(id){const chats=getChats();return chats[id]||[{role:'bot',text:chars.find(c=>c.id===id).intro}]}function setTab(t){tab=t;['discover','chat','stories','profile'].forEach(id=>$(id).classList.toggle('hidden',id!==t));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.tab===t));if(t==='stories')renderStories();window.scrollTo(0,0)}function renderFilters(){const types=['Alle','Romantik','Fantasy','Drama','Mystery','Western'];$('filters').innerHTML='';types.forEach(t=>{const b=document.createElement('button');b.className='filter'+(filter===t?' active':'');b.textContent=t;b.onclick=()=>{filter=t;renderFilters();renderCards()};$('filters').appendChild(b)})}function renderCards(){$('cards').innerHTML='';chars.filter(c=>filter==='Alle'||c.tags.includes(filter)).forEach(c=>{const b=document.createElement('button');b.className='character';b.innerHTML='<div class="art"></div><div class="cardtext"><strong></strong><small></small><p></p></div>';if(c.id==='kael'||c.id==='cole'){const img=document.createElement('img');img.src=c.id==='kael'?'kael.png.PNG':'cole.PNG';img.alt=c.name;img.style.cssText='width:100%;height:100%;object-fit:cover;object-position:center 30%';img.onerror=()=>{img.remove();b.querySelector('.art').textContent=c.emoji};b.querySelector('.art').appendChild(img)}else{b.querySelector('.art').textContent=c.emoji}b.querySelector('strong').textContent=c.name;b.querySelector('small').textContent=c.genre;b.querySelector('p').textContent=c.desc;b.onclick=()=>openChat(c.id);$('cards').appendChild(b)})}function openChat(id){hideChoices();active=id;const c=chars.find(x=>x.id===id);$('chatavatar').textContent='';if(c.id==='kael'||c.id==='cole'){const img=document.createElement('img');img.src=c.id==='kael'?'kael.png.PNG':'cole.PNG';img.alt=c.name;img.style.cssText='width:100%;height:100%;object-fit:cover;border-radius:16px';img.onerror=()=>{img.remove();$('chatavatar').textContent=c.emoji};$('chatavatar').appendChild(img)}else{$('chatavatar').textContent=c.emoji}$('chatname').textContent=c.name;$('chatgenre').textContent=c.genre;renderChat();setTab('chat')}function renderMessageText(container,text){
+  // Nur *(...)* wird als Handlung formatiert. Alle anderen Zeichen bleiben sicherer Text.
+  const re=/\*\(([\s\S]*?)\)\*|\*([^*\n]+)\*/g;
+  let last=0,match;
+  while((match=re.exec(text))!==null){
+    if(match.index>last)container.appendChild(document.createTextNode(text.slice(last,match.index)));
+    const action=document.createElement('span');
+    action.className='message-action';
+    action.textContent=match[1]!==undefined?match[1]:match[2];
+    container.appendChild(action);
+    last=re.lastIndex;
+  }
+  if(last<text.length)container.appendChild(document.createTextNode(text.slice(last)));
+}
+function hideChoices(){$('choices').classList.add('hidden');$('moonButton').setAttribute('aria-expanded','false');$('moonButton').setAttribute('aria-label','Antwortvorschläge anzeigen')}
+function toggleChoices(){const open=$('choices').classList.toggle('hidden')===false;$('moonButton').setAttribute('aria-expanded',String(open));$('moonButton').setAttribute('aria-label',open?'Antwortvorschläge verbergen':'Antwortvorschläge anzeigen')}
+function renderChat(){const c=chars.find(x=>x.id===active);$('messages').innerHTML='';chatFor(active).forEach(m=>{const b=document.createElement('div');b.className='bubble '+(m.role==='user'?'user':'bot');const s=document.createElement('div');s.className='speaker';s.textContent=m.role==='user'?'Du':c.name;const t=document.createElement('div');renderMessageText(t,m.text);b.append(s,t);$('messages').appendChild(b)});$('choices').innerHTML='<div class="choice-title">Ideen für deine nächste Antwort · optional</div>';(active==='kael'?kaelChoices(chatFor(active)):active==='cole'?coleChoices(chatFor(active)):c.choices).forEach((choice,i)=>{const b=document.createElement('button');b.className='choice';b.textContent='✦ '+choice;b.onclick=()=>{hideChoices();send(choice,i)};$('choices').appendChild(b)})}function kaelState(messages){let trust=0,closeness=0;for(const m of messages.filter(x=>x.role==='user')){const t=m.text.toLowerCase();if(/vertrau|ehrlich|helfen|gemeinsam|glaub|zuhör|bleib/.test(t))trust+=2;if(/lüg|droh|hasse|misstrau|verrat/.test(t))trust-=2;if(/küss|lieb|umarm|flirt|hand|nah|berühr/.test(t))closeness+=2;if(/abstand|allein|geh weg/.test(t))closeness-=1}return {trust:Math.max(0,Math.min(10,trust)),closeness:Math.max(0,Math.min(10,closeness)),stage:Math.floor(messages.filter(x=>x.role==='user').length/3)}}
+const kaelBeats=[
+{scene:'*Auf dem Schreibtisch liegt eine Mappe mit deinem Namen. Kael schiebt sie dir zu, ohne dich aus den Augen zu lassen.*',line:'„Jemand in meiner Organisation hat Informationen über dich gesammelt. Ich will wissen, warum.“',choices:['Die Mappe öffnen','Kael fragen, wer dahintersteckt','Ihm sagen, dass du ihm nicht vertraust']},
+{scene:'*Ein Handy vibriert. Kael liest die Nachricht, und sein Gesicht wird schlagartig ernst. Draußen hält ein schwarzer Wagen.*',line:'„Wir haben weniger Zeit, als ich dachte. Du entscheidest, ob du mir zuhörst.“',choices:['Kael nach dem Wagen fragen','Gemeinsam einen Plan machen','Darauf bestehen, allein zu gehen']},
+{scene:'*Im Aufzug bleibt Kael neben dir stehen. Zum ersten Mal klingt seine Stimme nicht befehlend, sondern vorsichtig.*',line:'„Ich habe Fehler gemacht. Aber diesmal sollst du selbst entscheiden.“',choices:['Nach seiner Vergangenheit fragen','Seine Hand nehmen','Eine klare Grenze setzen']},
+{scene:'*Eine verschlüsselte Nachricht erscheint auf Kaels Bildschirm: „Die Wahrheit liegt im Hafen.“ Er sieht dich an.*',line:'„Wenn wir dorthin gehen, gibt es Antworten. Aber ich werde dich nicht drängen.“',choices:['Zum Hafen fahren','Zuerst Beweise verlangen','Kael etwas Persönliches fragen']}
+];
+function kaelChoices(messages){const state=kaelState(messages),beat=kaelBeats[Math.min(state.stage,kaelBeats.length-1)];return beat.choices}
+function kaelReply(text,idx,messages){const state=kaelState(messages),t=text.toLowerCase(),beat=kaelBeats[Math.min(state.stage,kaelBeats.length-1)];let opening='';if(/wer bist|dein name|über dich|vergangenheit/.test(t))opening='*Kael betrachtet die Skyline.* „Ich habe dieses Imperium nicht geerbt. Ich habe es aufgebaut. Darauf bin ich nicht immer stolz.“';else if(/warum|wieso|weshalb|was willst|mappe|herbestellt/.test(t))opening='*Kael legt die Hände auf den Tisch.* „Weil dein Name auf einer Liste steht, die niemals hätte existieren dürfen. Ich versuche herauszufinden, wer sie geschrieben hat.“';else if(/vertrau|ehrlich|glaub|helfen/.test(t))opening=state.trust>=3?'*Seine Schultern entspannen sich ein wenig.* „Dein Vertrauen bedeutet mir mehr, als du ahnst. Ich werde es nicht leichtfertig verspielen.“':'*Er nickt langsam.* „Vertrauen verlangt Beweise. Die werde ich dir geben.“';else if(/küss|lieb|umarm|flirt|hand|nah|berühr/.test(t))opening=state.closeness>=3?'*Kael hält deinen Blick und lächelt unerwartet sanft.* „Du machst es mir schwer, meine Fassade aufrechtzuerhalten.“':'*Für einen Moment wirkt Kael aus dem Konzept gebracht. Er kommt nicht näher, bevor du es willst.* „Damit habe ich nicht gerechnet.“';else if(/geh|verlass|weg|allein|abstand/.test(t))opening='*Kael tritt zur Seite und lässt den Weg frei.* „Du kannst jederzeit gehen. Ich werde dich nicht aufhalten.“';else if(/lüg|droh|hasse|misstrau|verrat|herausforder/.test(t))opening='*Sein Blick wird kühl, doch er bleibt ruhig.* „Du musst mir nicht glauben. Stell mir eine Frage, und ich antworte ohne Ausflüchte.“';else if(/angst|gefahr|sicher|schutz/.test(t))opening='*Kael schaut zur Tür und senkt die Stimme.* „Es gibt ein Risiko. Ich verspreche dir keine falsche Sicherheit. Wir können gemeinsam überlegen, was du tun willst.“';else if(/hafen|auto|wagen|nachricht|beweis/.test(t))opening='*Kael zeigt dir die Nachricht auf seinem Telefon.* „Der Hinweis führt zum Hafen. Aber erst prüfen wir, ob er echt ist.“';else if(/hallo|hey|hi|guten/.test(t))opening='*Kael hebt eine Augenbraue.* „Du bist also noch hier. Gut. Was beschäftigt dich?“';else if(idx!==null)opening=[`*Kael nimmt deine Entscheidung ernst.* „${text.replace(/[.!?]+$/,'')}? Gut. Dann sehen wir uns die Konsequenzen gemeinsam an.“`,`*Er nickt knapp und lässt dir Raum.* „Ich höre dir zu. Sag mir, was du als Nächstes brauchst.“`,`*Kael verschränkt die Arme, ohne dir den Weg zu versperren.* „Du bestimmst, wie weit du gehen willst.“`][idx%3];else opening=['*Kael hört aufmerksam zu, bevor er antwortet.* „Interessant. Was hat dich zu dieser Entscheidung gebracht?“','*Er sieht dich einen Moment lang nachdenklich an.* „Ich will verstehen, was du meinst. Erzähl mir mehr.“','*Kael lehnt sich zurück.* „Das verändert meine Sicht auf die Sache. Wie möchtest du weiter vorgehen?“'][messages.length%3];
+return opening+'\n'+beat.scene+'\n'+beat.line}
+
+function coleChoices(messages){const turns=messages.filter(m=>m.role==='user').length;if(!turns)return chars.find(c=>c.id==='cole').choices;const sets=[['Cole nach Ranger fragen','Mit Cole über die Weiden reiten','Cole frech herausfordern'],['Cole nach seiner Familie fragen','Ihm bei den Rindern helfen','Mit ihm den Sonnenuntergang ansehen'],['Cole sagen, was du wirklich fühlst','Einen Spaziergang zum Fluss machen','Ihn fragen, warum er immer so aufpasst']];return sets[(turns-1)%sets.length]}
+function coleReply(text,idx,messages){const t=text.toLowerCase(),turn=messages.filter(m=>m.role==='user').length;let line;
+if(/sweetheart|darlin|nenn mich nicht|spitzname/.test(t))line='*Cole hebt grinsend beide Hände.* „Schon gut, ich lass das. Sag mir, wie du angesprochen werden möchtest. Ich kann mich benehmen – manchmal.“';
+else if(/pferd|ranger|reit|sattel|hengst/.test(t))line='*Cole streicht seinem braunen Hengst über die Mähne.* „Das ist Ranger. Er vertraut nicht jedem, aber du scheinst ihm zu gefallen. Willst du ihn kennenlernen? Ich bleib in der Nähe, falls du Hilfe möchtest.“';
+else if(/rind|kuh|herde|arbeit|stall|helfen/.test(t))line='*Cole krempelt die Ärmel hoch und deutet zur Weide.* „Na, das nenn ich Einsatz, Darlin’. Wir kontrollieren zuerst die Zäune und danach die Herde. Du bekommst die leichte Aufgabe – wenn du mich lässt.“';
+else if(/familie|vater|mutter|vergangenheit|ranch gehör/.test(t))line='*Coles Grinsen wird nachdenklich.* „Die Ranch gehört meiner Familie seit drei Generationen. Mein Vater hat mir beigebracht, dass man sein Wort hält. Manchmal ist das schwerer, als es klingt.“';
+else if(/angst|gefahr|hilfe|verletz|beschütz|sicher/.test(t))line='*Cole wird sofort ernst und sieht dich aufmerksam an.* „Hey. Sag mir, was los ist. Ich bin hier und helfe dir, wenn du das möchtest. Wir machen nichts, womit du dich unwohl fühlst.“';
+else if(/küss|lieb|flirt|hübsch|schön|gefäll|nur wegen dir|mag dich/.test(t))line='*Cole zieht seinen Hut ab und fährt sich durch die kurzen blonden Haare.* „Du machst es einem Cowboy nicht gerade leicht, cool zu bleiben.“ *Sein Lächeln wird weich.* „Ich mag deine Gesellschaft. Mehr, als ich zugeben wollte.“';
+else if(/lüg|vertrau|ehrlich|geheim/.test(t))line='*Cole wird still und sieht dir direkt in die Augen.* „Auf dieser Ranch zählt ein ehrliches Wort. Wenn du mir nicht vertraust, dann will ich mir das verdienen. Ohne große Sprüche.“';
+else if(/geh|weg|verlass|allein/.test(t))line='*Cole tritt zur Seite und lässt dir den Weg frei.* „Ich halt dich nicht auf. Wenn du zurückkommen möchtest, weißt du, wo das Tor steht.“';
+else if(/frech|cowboy|boss|stur|herausforder/.test(t))line='*Cole lacht und legt den Kopf schief.* „Oh, du willst mich also herausfordern? Na gut. Aber beschwer dich nicht, wenn ich zurückflirte.“';
+else if(/sonnenuntergang|fluss|spazier|abend|nacht/.test(t))line='*Cole deutet auf einen Pfad hinter den Weiden.* „Da hinten gibt es einen Hügel mit Blick auf das ganze Tal. Ich geh oft hin, wenn ich nachdenken muss. Willst du mitkommen?“';
+else if(/warum|wieso|was|wer|wie|erzähl|frage/.test(t))line='*Cole stützt einen Arm auf den Zaun und hört aufmerksam zu.* „Gute Frage. Hier draußen lernt man, nicht um den heißen Brei zu reden. Was möchtest du zuerst wissen – über mich oder die Ranch?“';
+else {const variants=['*Cole grinst schief.* „Du überraschst mich, weißt du das? Erzähl weiter. Ich hör zu.“','*Cole lehnt sich gegen das Stalltor.* „Okay, damit hab ich nicht gerechnet. Und was hast du jetzt vor, Darlin’?“','*Cole betrachtet dich neugierig.* „Das klingt nach einem Plan. Soll ich dir helfen, oder willst du es mir erst mal beweisen?“','*Cole lacht leise.* „Du bringst ordentlich Leben auf meine Ranch. Was kommt als Nächstes?“'];line=variants[turn%variants.length]}
+const scenes=['*Ein Pferd schnaubt im Stall, während die Sonne hinter den Hügeln sinkt.*','*Ein warmer Wind streicht über die Weiden. In der Ferne muht ein Rind.*','*Cole stellt seinen Hut auf einen Zaunpfosten und wartet auf deine Antwort.*','*Aus dem Ranchhaus dringt der Duft von frischem Kaffee.*'];return line+'\n'+scenes[turn%scenes.length]}
+
+function response(c,text,idx,turn,messages){if(c.id==='cole'||c.id==='kael')return deeperReply(c.id,text,idx,messages);if(idx!==null)return c.replies[idx];const t=text.toLowerCase();if(/wer|warum|wieso|geheim|erzähl|was/.test(t))return `*${c.name} hält einen Moment inne und betrachtet dich nachdenklich.* „Es gibt Dinge, die ich dir noch nicht erzählt habe. Aber ich glaube, du bist bereit für die Wahrheit.“`;if(/geh|lauf|renn|flieh|weg|verlass/.test(t))return `*Du setzt dich in Bewegung. ${c.name} folgt dir mit besorgtem Blick.* „Warte! Du weißt nicht, was dort draußen auf uns wartet.“`;if(/lieb|küss|umarm|hand|nah/.test(t))return `*${c.name} lächelt vorsichtig und kommt einen Schritt näher.* „Ich hätte nicht gedacht, dass dieser Augenblick so viel verändern könnte.“`;const options=[`*${c.name} blickt dich überrascht an.* „Das ist mutig. Aber bist du sicher, dass du diesen Weg gehen willst?“`,`*Ein unerwartetes Geräusch unterbricht euch. ${c.name} dreht sich zur Seite.* „Hast du das auch gehört?“`,`*${c.name} nickt langsam.* „Dann entscheiden wir das gemeinsam. Was möchtest du als Nächstes tun?“`];return options[turn%options.length]}
+// Charaktertiefe: Erinnerungen werden aus dem gespeicherten Chatverlauf abgeleitet.
+const deepProfiles={
+ cole:{name:'Cole',place:'auf der Silver Creek Ranch',soft:'*Cole nimmt den Hut ab und dreht ihn langsam zwischen seinen Händen.*',guard:'*Sein sonst so leichtes Grinsen verschwindet. Er bleibt in respektvollem Abstand.*',warm:'*Cole lächelt, diesmal ohne den üblichen frechen Spruch.*'},
+ kael:{name:'Kael',place:'im Penthouse',soft:'*Kael löst langsam den Griff um sein Glas. Seine Stimme wird leiser.*',guard:'*Kaels Miene wird unbeweglich. Er zwingt sich, nicht sofort zu antworten.*',warm:'*Ein flüchtiges, ehrliches Lächeln durchbricht Kaels ernste Miene.*'}
+};
+function deepMemory(messages){
+ const user=messages.filter(m=>m.role==='user');
+ const all=user.map(m=>m.text.toLowerCase()).join(' ');
+ const has=re=>re.test(all);
+ let trust=0,closeness=0;
+ for(const m of user){const t=m.text.toLowerCase();if(/vertrau|ehrlich|bleib|helf|gemeinsam|glaub/.test(t))trust++;if(/lüg|verrat|misstrau|hasse|droh/.test(t))trust-=2;if(/küss|umarm|berühr|liebe|hand nehm|mag dich/.test(t))closeness++;if(/abstand|lass mich|allein|geh weg/.test(t))closeness--;}
+ return {turns:user.length,trust:Math.max(-3,Math.min(6,trust)),closeness:Math.max(-2,Math.min(6,closeness)),rode:has(/reit|ausritt|sattel|ranger/),river:has(/fluss|bach|spaziergang/),family:has(/familie|vater|mutter/),secret:has(/geheim|vergangenheit|wahrheit/),harbor:has(/hafen/),file:has(/mappe|akte/),left:has(/verlass|weggeh|allein/)};
+}
+// Kleine, eigenständige Impulse: Die Figur handelt, ohne die Entscheidungen der spielenden Person festzulegen.
+function characterInitiative(id, messages, userText){
+ const memory=deepMemory(messages),turn=memory.turns;
+ if(turn<2)return '';
+ const t=userText.toLowerCase();
+ const tense=/lass mich|abstand|geh weg|allein|stopp|hör auf|nein|wütend|sauer|misstrau|verrat|lüg/.test(t);
+ const fragile=/angst|wein|traurig|zitter|unsicher|verletzt|panik/.test(t);
+ // Nicht jede Antwort soll ein neues Ereignis erzwingen.
+ if(turn%3!==0 && !(turn%4===0 && (memory.rode||memory.file||memory.family||memory.harbor)))return '';
+ let options;
+ if(id==='cole'){
+  if(tense)options=[
+   '*(Cole nimmt seinen Hut ab und geht einige Schritte zurück. Er stellt eine Wasserflasche auf den Zaun, ohne sie dir aufzudrängen.)*\nIch bin beim Stall, falls du später reden möchtest.',
+   '*(Cole unterbricht seine Arbeit am Tor. Statt näherzukommen, öffnet er die Pforte und lässt den Weg frei.)*\nDu entscheidest, ob wir das Gespräch fortsetzen.'
+  ];
+  else if(fragile)options=[
+   '*(Cole holt eine weiche Decke von der Veranda und legt sie auf die Bank neben dir. Dann setzt er sich mit etwas Abstand an das andere Ende.)*\nWir müssen jetzt nichts entscheiden.',
+   '*(Cole gießt zwei Becher warmen Tee ein und stellt einen auf die Verandastufe.)*\nIch bleibe noch ein bisschen hier. Du kannst erzählen, musst aber nicht.'
+  ];
+  else if(memory.rode)options=[
+   '*(Ranger scharrt im Stall. Cole greift nach einer Bürste und beginnt ruhig das Fell des Pferdes zu pflegen.)*\nEr ist heute erstaunlich geduldig. Willst du mir Gesellschaft leisten?',
+   '*(Cole entdeckt am Weidezaun ein lockeres Brett und holt seinen Werkzeugkasten. Mit einem prüfenden Blick zieht er die erste Schraube fest.)*\nHier gibt es immer etwas zu tun. Ich mag es, wenn jemand dabei ist.'
+  ];
+  else if(memory.family)options=[
+   '*(Cole öffnet die Schublade auf der Veranda und nimmt ein altes Foto seiner Familie heraus. Er betrachtet es einen Moment, bevor er es auf den Tisch legt.)*\nDas war kurz vor meiner ersten eigenen Viehauktion.',
+   '*(Cole entdeckt ein altes Brandzeichen an einem Holzbalken und fährt gedankenverloren mit den Fingern darüber.)*\nMein Vater hat das hier angebracht. Ich hab es nie übers Herz gebracht, es zu ersetzen.'
+  ];
+  else options=[
+   '*(Cole stößt sich vom Zaun ab, geht zur Tränke und füllt frisches Wasser nach. Als er zurückkommt, deutet er auf die Veranda.)*\nIch wollte sowieso eine Pause machen. Kaffee?',
+   '*(Ein loses Halfter hängt am Stalltor. Cole nimmt es herunter, prüft die Schnalle und hängt es ordentlich zurück.)*\nAuf einer Ranch findet man nie einen wirklich ruhigen Tag.',
+   '*(Cole öffnet das Tor zur kleinen Koppel. Ranger hebt sofort den Kopf, und Cole muss unwillkürlich lächeln.)*\nSiehst du? Der Kerl hält sich für den eigentlichen Besitzer hier.'
+  ];
+ }else{
+  if(tense)options=[
+   '*(Kael verstummt, legt sein Telefon auf den Tisch und tritt bewusst vom Ausgang weg.)*\nDu bekommst den Raum, den du brauchst. Ich werde dich nicht drängen.',
+   '*(Kael zieht den Stuhl zurück und setzt sich, statt dir zu folgen. Die Mappe bleibt geschlossen.)*\nWir können später darüber sprechen. Du entscheidest.'
+  ];
+  else if(fragile)options=[
+   '*(Kael schaltet das grelle Deckenlicht aus und lässt nur die warme Tischlampe brennen. Dann stellt er ein Glas Wasser in Reichweite.)*\nWir haben Zeit.',
+   '*(Kaels Telefon beginnt zu klingeln. Er wirft einen Blick darauf, stellt es lautlos und legt es beiseite.)*\nDas kann warten.'
+  ];
+  else if(memory.harbor)options=[
+   '*(Auf Kaels Bildschirm erscheint eine neue Aufnahme der Hafenkamera. Er dreht den Monitor so, dass du sie sehen kannst, ohne näherzukommen.)*\nDer Wagen war gestern schon dort. Das ist kein Zufall.',
+   '*(Kael markiert zwei Lagerhallen auf einem Stadtplan und schiebt ihn über den Tisch.)*\nIch habe die möglichen Zugänge geprüft. Wir sollten nichts überstürzen.'
+  ];
+  else if(memory.file)options=[
+   '*(Kael zieht ein einzelnes Blatt aus der Mappe und legt es offen auf den Tisch. Ein Name ist geschwärzt.)*\nJemand hat diesen Eintrag nachträglich verändert. Das möchte ich überprüfen.',
+   '*(Eine verschlüsselte Nachricht trifft auf Kaels Laptop ein. Er liest sie, verzieht kaum merklich das Gesicht und schließt das Fenster.)*\nEs gibt eine neue Spur. Aber ich vertraue der Quelle noch nicht.'
+  ];
+  else options=[
+   '*(Kael tritt ans Fenster. Unten hält ein schwarzer Wagen ungewöhnlich lange vor dem Gebäude. Er merkt sich das Kennzeichen.)*\nDas gefällt mir nicht. Ich werde prüfen lassen, wem er gehört.',
+   '*(Kael öffnet eine Schublade, holt einen Stadtplan heraus und markiert einen Ort mit einem Bleistift.)*\nHier hat die Sache begonnen. Vielleicht finden wir dort einen Hinweis.',
+   '*(Sein Telefon vibriert. Kael liest eine kurze Nachricht und legt es mit dem Display nach unten auf den Tisch.)*\nEine meiner Quellen hat sich gemeldet. Ich muss entscheiden, wie verlässlich das ist.'
+  ];
+ }
+ return '\n'+options[Math.floor(turn/3)%options.length];
+}
+// Beziehungsentwicklung: Worte, Handlungen und Grenzen werden über den Verlauf ausgewertet.
+function relationshipState(id,messages){
+ const user=messages.filter(m=>m.role==='user');
+ let trust=0,closeness=0,conflicts=0,shared=0,streak=0;
+ const memories={ranger:false,ride:false,family:false,river:false,coffee:false,file:false,harbor:false,truth:false};
+ for(const m of user){
+  const t=m.text.toLowerCase();
+  const boundary=/\b(stopp|stop|nein|lass mich|hör auf|abstand|nicht anfassen|nicht küssen|geh weg|in ruhe)\b/.test(t);
+  const conflict=/lüg|verrat|misstrau|hasse|droh|wütend|sauer|enttäusch/.test(t);
+  const sincere=/vertrau|ehrlich|danke|gemeinsam|versteh|entschuldig|zuhör|bleib|verzeih|fühl mich wohl|mag dich|gern bei dir/.test(t);
+  const affection=/küss|umarm|berühr|streichel|hand nehm|halte deine hand|liebe dich|mag dich|nähe/.test(t);
+  if(boundary){closeness=Math.max(0,closeness-2);streak=0;}
+  else if(conflict){trust=Math.max(0,trust-2);conflicts++;streak=0;}
+  else {if(sincere){trust=Math.min(12,trust+2);streak++;} if(affection && trust>=3)closeness=Math.min(10,closeness+1);}
+  if(/ranger|pferd|hengst/.test(t))memories.ranger=true;
+  if(/ausritt|reiten|geritten|sattel/.test(t))memories.ride=true;
+  if(/familie|vater|mutter/.test(t))memories.family=true;
+  if(/fluss|bach|spaziergang/.test(t))memories.river=true;
+  if(/kaffee|veranda/.test(t))memories.coffee=true;
+  if(/mappe|akte|liste/.test(t))memories.file=true;
+  if(/hafen|lagerhalle/.test(t))memories.harbor=true;
+  if(/wahrheit|geheimnis|vergangenheit/.test(t))memories.truth=true;
+  if(/zusammen|gemeinsam|ausritt|reiten|kaffee|spazier|helfen|ranger|mappe|hafen/.test(t))shared++;
+ }
+ // Cole braucht mehr Vertrauen als Kael, bevor er Nähe von sich aus zulässt.
+ const phase=id==='cole'?(trust>=8&&shared>=3&&closeness>=2?3:trust>=5&&shared>=2?2:trust>=3?1:0):(trust>=8&&closeness>=2?3:trust>=5?2:trust>=2?1:0);
+ return {turns:user.length,trust,closeness,conflicts,shared,phase,memories};
+}
+function deeperReply(id,text,idx,messages){
+ const state=relationshipState(id,messages),t=text.toLowerCase(),n=state.turns;
+ const pick=a=>a[(n+Math.max(0,idx||0))%a.length];
+ const boundary=/\b(stopp|stop|nein|lass mich|hör auf|abstand|nicht anfassen|nicht küssen|geh weg|in ruhe)\b/.test(t);
+ const distress=/ängst|angst|unsicher|schüchtern|traurig|wein|zitter|nervös|einsam|fehl am platz|nicht gut genug/.test(t);
+ const conflict=/lüg|verrat|misstrau|wütend|sauer|enttäusch|hasse/.test(t);
+ const affection=/küss|küssen|umarm|berühr|streichel|hand nehm|liebe dich|mag dich|näher|flirt|schön|attraktiv/.test(t);
+ const question=/\?|warum|wieso|weshalb|erzähl|familie|vater|vergangenheit|geheimnis|ranch|mappe|akte/.test(t);
+ let result='';
+ if(id==='cole'){
+  if(boundary)result=pick([
+   '*(Cole tritt sofort zurück. Sein Grinsen verschwindet, und er nimmt den Hut ab.)* Verstanden. Ich halte Abstand. Du musst mir nichts erklären.',
+   '*(Cole lässt die Hände sinken und macht dir den Weg frei.)* Okay, Sweetheart. Deine Grenze gilt. Ich kümmere mich erst mal um die Pferde.'
+  ]);
+  else if(distress)result=pick([
+   '*(Cole bemerkt deine Unsicherheit. Der freche Spruch, der ihm schon auf der Zunge lag, bleibt unausgesprochen. Er setzt sich mit etwas Abstand auf den Zaun.)* Weißt du, als ich die Ranch übernommen habe, war ich mir sicher, dass ich alles vermasseln würde. Ich hab nur ziemlich überzeugend so getan, als wäre es anders.',
+   '*(Er nimmt den Hut ab und dreht ihn langsam zwischen den Händen.)* Ich kann dich jetzt mit einem schlechten Witz ablenken. Bin sogar ziemlich gut darin. Oder ich hör einfach zu. Du entscheidest.'
+  ]);
+  else if(conflict)result=pick([
+   '*(Cole presst kurz die Lippen zusammen, statt mit einem sarkastischen Spruch zu kontern.)* Ich kann stur sein. Aber wenn ich dich verletzt habe, will ich das verstehen. Und nicht weggrinsen.',
+   '*(Er stützt beide Arme auf den Zaun und schaut einen Moment über die Weide.)* Du hast recht, mich darauf anzusprechen. Ich bin nicht besonders gut darin, zuzugeben, wenn ich Mist gebaut habe.'
+  ]);
+  else if(affection && state.phase<2)result=pick([
+   '*(Cole hält kurz inne und weicht ein kleines Stück zurück. Zum ersten Mal wirkt sein Lächeln unsicher.)* Whoa, Sweetheart. Ich flirte gern, aber bei echter Nähe bin ich langsamer. Nicht, weil ich dich nicht mag. Gerade deshalb.',
+   '*(Er fährt sich verlegen durch die blonden Haare und versucht ein schiefes Grinsen.)* Bei einem durchgehenden Hengst weiß ich, was zu tun ist. Bei jemandem, der mir wichtig werden könnte? Da brauch ich einen Moment. Lass uns nichts überstürzen.'
+  ]);
+  else if(affection && state.phase>=2)result=pick([
+   '*(Cole sieht dich erst fragend an. Als er merkt, dass die Nähe willkommen ist, hält er dir die Hand hin. Sein Grinsen ist ungewohnt sanft.)* Weißt du, das hier bedeutet mir mehr als jeder meiner dummen Sprüche.',
+   '*(Cole bleibt ganz nah stehen, ohne dir die Entscheidung abzunehmen. Seine Stimme wird leiser.)* Ich hab lange gebraucht, um mich jemandem so zu zeigen. Und jetzt stehst du hier und bringst mich trotzdem zum Lächeln.'
+  ]);
+  else if(question && /familie|vater|mutter|vergangenheit/.test(t))result=state.phase>=1?
+   '*(Cole streicht mit dem Daumen über die abgenutzte Hutkrempe.)* Mein Vater hat mir beigebracht, wie man einen Zaun repariert. Wie man sagt, dass man Angst hat, hat er mir nicht beigebracht. Vielleicht versuche ich deshalb immer, alles wegzulachen.':
+   '*(Cole hebt eine Braue.)* Uff, gleich die schweren Fragen? Normalerweise fangen meine Dates mit Kaffee an. *(Sein Lächeln wird etwas ruhiger.)* Die Ranch ist seit Generationen in meiner Familie. Mehr erzähl ich dir, wenn wir uns besser kennen.';
+  else if(question && /ranger|pferd|reit|sattel/.test(t))result='*(Cole öffnet das Stalltor und hält es mit einer Hand auf. Ranger schnaubt neugierig.)* Der Kerl da ist Ranger. Er testet jeden Neuling. Anders als ich hat er wenigstens den Anstand, nicht dabei zu flirten.';
+  else if(state.phase>=3)result=pick([
+   '*(Cole schiebt seinen Hut in den Nacken und lächelt dich an. Dann wird er für einen Augenblick ernst.)* Früher war ein frecher Spruch mein bester Ausweg. Bei dir muss ich mich nicht mehr ständig verstecken. Ziemlich beängstigend, wenn du mich fragst.',
+   '*(Cole stellt zwei Becher Kaffee auf die Veranda und lässt den Blick über die Weiden wandern.)* Ich mag, dass du inzwischen auch die stillen Seiten von mir kennst. Aber bild dir bloß nichts drauf ein, Sweetheart. Ich bleibe unausstehlich.'
+  ]);
+  else result=pick([
+   '*(Cole lehnt am Stalltor und hebt spöttisch eine Augenbraue.)* Du siehst aus, als hättest du einen Plan. Das macht mir Sorgen. Meine besten Ideen enden meistens mit kaputten Zäunen und einem beleidigten Pferd.',
+   '*(Cole fängt seinen Hut auf, den der Wind beinahe vom Zaun geweht hätte.)* Siehst du? Selbst der Wind hier hat einen schlechten Sinn für Humor. Komm, ich wollte sowieso nach Ranger sehen.',
+   '*(Cole mustert dich mit einem frechen Grinsen, das einen Moment später ehrlicher wird.)* Ich rede viel Unsinn, das weißt du vermutlich schon. Aber ich freu mich wirklich, dass du hier bist.',
+   '*(Cole greift nach dem Werkzeugkasten neben dem Tor.)* Ich muss noch ein Brett festziehen. Du kannst mir Gesellschaft leisten. Ich verspreche, nur jeden zweiten Nagel mit einem schlechten Witz zu beleidigen.'
+  ]);
+  if(!boundary&&!conflict&&!distress&&n%4===0){
+   if(state.memories.ride)result+='\n*(Ranger scharrt im Stall. Cole blickt hinüber und lächelt.)* Unser Ausritt ist mir übrigens im Kopf geblieben.';
+   else if(state.memories.family)result+='\n*(Er betrachtet das alte Familienfoto auf der Veranda.)* Ich rede sonst nicht oft über meine Familie.';
+  }
+ }else{
+  if(boundary)result=pick([
+   '*(Kael verstummt sofort. Er tritt einen Schritt zurück und nimmt die Hand vom Türrahmen.)* Verstanden. Ich bin es gewohnt, Kontrolle zu haben. Über deine Grenzen bestimme ich nicht.',
+   '*(Kael schließt langsam die Akte und macht den Weg frei.)* Gut. Dann halte ich Abstand. Wenn du reden möchtest, höre ich zu.'
+  ]);
+  else if(distress)result=pick([
+   '*(Kael betrachtet dich lange. Statt eine Anweisung zu geben, schiebt er dir ein Glas Wasser hin.)* Ich kann ganze Räume zum Schweigen bringen. Aber ich bin erstaunlich schlecht darin, jemanden zu trösten. Ich kann trotzdem hierbleiben.',
+   '*(Kael stellt sein klingelndes Telefon lautlos. Sein Blick bleibt bei dir.)* Die Angelegenheit kann warten. Du musst gerade nichts beweisen.'
+  ]);
+  else if(conflict)result=pick([
+   '*(Kaels Kiefer spannt sich an. Er wirkt, als wolle er widersprechen, doch dann atmet er langsam aus.)* Ich bin es gewohnt, Entscheidungen zu treffen. Das heißt nicht, dass ich immer recht habe. Sag mir, was ich übersehen habe.',
+   '*(Kael legt den Stift beiseite und verschränkt die Hände.)* Du forderst mich heraus. Das gefällt mir nicht immer. Aber ich respektiere, dass du es tust.'
+  ]);
+  else if(affection && state.phase<2)result=pick([
+   '*(Kael hält inne, als wäre Nähe eine Frage, auf die er keine vorbereitete Antwort hat.)* Du bist mutiger, als dir vielleicht bewusst ist. Ich lasse nicht schnell jemanden an mich heran. Und ich werde auch dich nicht drängen.',
+   '*(Ein kaum sichtbares Lächeln streift Kaels Gesicht. Er bleibt auf respektvollem Abstand.)* Du hast ein Talent dafür, meine Selbstbeherrschung auf die Probe zu stellen, Liebling. Ich würde dich gern erst besser kennenlernen.'
+  ]);
+  else if(affection && state.phase>=2)result=pick([
+   '*(Kael legt seine Uhr ab, als wolle er sich zum ersten Mal heute wirklich Zeit nehmen. Er hält dir die Hand hin, ohne sie einfach zu ergreifen.)* Ich bin nicht gut darin, Kontrolle abzugeben. Bei dir möchte ich es versuchen.',
+   '*(Kael tritt näher, bleibt aber vor dir stehen. Seine Stimme ist tief und ungewohnt offen.)* Ich könnte dir sagen, was ich will. Aber wichtiger ist mir, was du möchtest.'
+  ]);
+  else if(question && /mappe|akte|liste|hafen|geheim|wahrheit/.test(t))result=pick([
+   '*(Kael zieht eine Mappe aus der Schublade und legt sie geöffnet auf den Tisch.)* In meinem Geschäft gibt es Menschen, die Informationen als Druckmittel benutzen. Jemand hat deinen Namen in diese Unterlagen gesetzt. Ich will herausfinden, warum – ohne dich in etwas hineinzuziehen.',
+   '*(Kael markiert auf einem Stadtplan zwei Gebäude am Hafen.)* Die Spur führt hierher. Ich habe meine Leute gebeten, die Eigentumsverhältnisse zu prüfen. Bevor wir irgendetwas entscheiden, bekommst du alle Informationen.'
+  ]);
+  else if(question && /vergangenheit|familie|über dich|wer bist/.test(t))result=state.phase>=1?
+   '*(Kael schaut aus dem Fenster auf die Stadt.)* Ich habe früh gelernt, dass Unsicherheit ausgenutzt wird. Also habe ich mir angewöhnt, immer einen Schritt voraus zu sein. Das macht mich erfolgreich. Und manchmal unerträglich.':
+   '*(Kael hebt eine Augenbraue.)* Du möchtest mich durchschauen? Das versuchen viele. *(Er schiebt den Stuhl dir gegenüber zurück.)* Aber du darfst fragen. Ich verspreche, nicht jede Antwort hinter einer Ausrede zu verstecken.';
+  else if(state.phase>=3)result=pick([
+   '*(Kael legt sein Telefon bewusst beiseite und sieht dich direkt an.)* Früher hätte ich diesen Abend bis auf die Minute geplant. Jetzt hoffe ich nur, dass du noch ein wenig bleibst. Freiwillig, versteht sich.',
+   '*(Ein seltenes, offenes Lächeln erscheint auf Kaels Gesicht.)* Du hast mir nicht beigebracht, schwächer zu werden. Du hast mir gezeigt, dass ich nicht alles kontrollieren muss.'
+  ]);
+  else result=pick([
+   '*(Kael schließt eine Akte mit einem leisen Klicken.)* Ich mag klare Entscheidungen. Du scheinst allerdings entschlossen, mir das Leben komplizierter zu machen. *(Ein kaum sichtbares Lächeln.)* Interessant.',
+   '*(Kael geht zum Fenster und betrachtet die Lichter der Stadt.)* Meine Leute erwarten, dass ich auf jede Frage eine Antwort habe. Bei dir fällt mir auf, wie selten ich selbst welche stelle.',
+   '*(Kael schiebt dir einen Stuhl zurecht und setzt sich erst, als du Platz nehmen konntest.)* Ich habe einen Vorschlag. Keine Anweisung. Du kannst ihn ablehnen.',
+   '*(Eine Nachricht erscheint auf Kaels Bildschirm. Er liest sie, sperrt das Gerät und wendet sich wieder dir zu.)* Die Geschäfte laufen nicht davon. Zumindest nicht in den nächsten fünf Minuten.'
+  ]);
+  if(!boundary&&!conflict&&!distress&&n%4===0){
+   if(state.memories.harbor)result+='\n*(Kael deutet auf den Stadtplan.)* Die Sache am Hafen habe ich nicht vergessen. Ich prüfe die Hinweise weiter.';
+   else if(state.memories.file)result+='\n*(Sein Blick streift die geschlossene Mappe.)* Wir sollten die Herkunft dieser Unterlagen noch klären.';
+  }
+ }
+ // Eigene kleine Aktionen, aber keine Entscheidungen oder Berührungen für die spielende Person festlegen.
+ if(!boundary&&!distress&&!conflict&&n%5===0){
+  result+='\n'+(id==='cole'?'*(Cole steht auf, prüft den Wasserstand an der Pferdetränke und kehrt mit zwei Bechern Kaffee zur Veranda zurück.)*':'*(Kael öffnet den Terminkalender, streicht einen unwichtigen Termin und legt ihn beiseite.)*');
+ }
+ return result;
+}
+
+function send(text,idx=null){text=text.trim();if(!text||!active)return;const chats=getChats(),messages=chatFor(active),c=chars.find(x=>x.id===active);messages.push({role:'user',text});messages.push({role:'bot',text:response(c,text,idx,messages.length,messages)});chats[active]=messages;saveChats(chats);$('messageInput').value='';hideChoices();renderChat();requestAnimationFrame(()=>window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'}))}
+function renderStories(){$('storylist').innerHTML='';const chats=getChats(),ids=Object.keys(chats);if(!ids.length){$('storylist').textContent='Noch keine gespeicherten Geschichten. Starte ein Abenteuer unter „Entdecken“.';return}ids.forEach(id=>{const c=chars.find(x=>x.id===id);if(!c)return;const el=document.createElement('div');el.className='storyitem';const info=document.createElement('div');info.textContent=c.emoji+' '+c.name+' · '+Math.floor(chats[id].length/2)+' Nachrichten';const btn=document.createElement('button');btn.className='secondary';btn.textContent='Fortsetzen';btn.onclick=()=>openChat(id);el.append(info,btn);$('storylist').appendChild(el)})}document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));$('back').onclick=()=>setTab('discover');$('moonButton').onclick=toggleChoices;$('actionButton').onclick=()=>{
+  const input=$('messageInput');
+  const start=input.selectionStart??input.value.length;
+  const end=input.selectionEnd??start;
+  const before=input.value.slice(0,start),after=input.value.slice(end);
+  const prefix=before.length&&!/\s$/.test(before)?' ':'';
+  const suffix=after.length&&!/^\s/.test(after)?' ':'';
+  const insertion=prefix+'*()*'+suffix;
+  if(input.value.length+insertion.length-(end-start)>input.maxLength)return;
+  input.setRangeText(insertion,start,end,'end');
+  const cursor=start+prefix.length+2;
+  input.focus();input.setSelectionRange(cursor,cursor);
+};$('composer').onsubmit=e=>{e.preventDefault();send($('messageInput').value)};$('resetChat').onclick=()=>{if(confirm('Diese Geschichte wirklich neu starten?')){const chats=getChats();delete chats[active];saveChats(chats);renderChat()}};$('clearAll').onclick=()=>{if(confirm('Alle gespeicherten Geschichten wirklich löschen?')){localStorage.removeItem('evertale_chats');alert('Lokale Chats gelöscht.')}};renderFilters();renderCards();
+</script></body></html>
